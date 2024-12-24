@@ -127,7 +127,7 @@ const Divider = styled.div`
 
 const HeroSection = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="beranda">
       <ContentWrapper>
         <Divider />
         <Title>

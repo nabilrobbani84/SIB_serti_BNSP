@@ -136,7 +136,7 @@ const CategorySection = () => {
   ];
 
   return (
-    <SectionContainer>
+    <SectionContainer id="kategori">
       <Title>Kategori Produk</Title>
       <Subtitle>Lebih dari 10.000 suku cadang siap dikirim ke seluruh Indonesia</Subtitle>
       <CategoryGrid>

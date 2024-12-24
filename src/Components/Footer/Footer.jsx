@@ -4,57 +4,63 @@ import styled from "styled-components";
 const FooterContainer = styled.footer`
   background-color: #1e1e2f;
   color: white;
+  
   text-align: center;
-  padding: 20px;
+  padding: 20px 40px;
   margin-top: 40px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 
   max-width: 1200px;
   margin: 40px auto 0;
 
   @media (max-width: 1024px) {
-    padding: 20px;
+    padding: 20px 30px;
+    gap: 18px;
     font-size: 1rem;
   }
 
   @media (max-width: 768px) {
-    padding: 15px;
+    padding: 15px 20px;
+    gap: 15px;
     font-size: 0.9rem;
-    gap: 8px;
   }
 
   @media (max-width: 480px) {
-    padding: 10px;
+    padding: 12px 15px;
+    gap: 12px;
     font-size: 0.85rem;
-    gap: 6px;
   }
 `;
 
 const FooterText = styled.p`
   margin: 0;
   font-size: 1rem;
-  opacity: 0.8;
+  opacity: 0.9;
 
   @media (max-width: 1024px) {
     font-size: 0.95rem;
+    opacity: 0.85;
   }
 
   @media (max-width: 768px) {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
   }
 
   @media (max-width: 480px) {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
   }
 `;
 
 const FooterLinks = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin-top: 10px;
   flex-wrap: wrap;
   justify-content: center;
@@ -62,24 +68,35 @@ const FooterLinks = styled.div`
   a {
     color: #4fd1c5;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.2s ease;
 
     &:hover {
       color: #ffffff;
+      transform: scale(1.1);
     }
 
     @media (max-width: 1024px) {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
 
     @media (max-width: 480px) {
-      font-size: 0.75rem;
+      font-size: 0.8rem;
     }
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px; /* Kurangi jarak antar tautan */
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column; /* Tampilkan tautan secara vertikal */
+    align-items: center;
+    gap: 10px; /* Lebih kecil untuk mobile */
   }
 `;
 

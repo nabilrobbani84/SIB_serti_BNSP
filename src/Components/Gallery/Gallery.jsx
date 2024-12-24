@@ -131,7 +131,7 @@ const GallerySection = () => {
   ];
 
   return (
-    <SectionContainer>
+    <SectionContainer id="galeri">
       <Title>Galeri Mitra Belipart</Title>
       <Subtitle>
         Lebih dari 5000 bengkel telah menjadi mitra kami dan jumlah mitra kami terus bertambah.
