@@ -4,7 +4,6 @@ import styled from "styled-components";
 const FooterContainer = styled.footer`
   background-color: #1e1e2f;
   color: white;
-  
   text-align: center;
   padding: 20px 40px;
   margin-top: 40px;
@@ -15,8 +14,9 @@ const FooterContainer = styled.footer`
   align-items: center;
   gap: 20px;
 
-  max-width: 1200px;
-  margin: 40px auto 0;
+  max-width: 100%;
+  width: 100%;
+  margin: 40px 0 0;
 
   @media (max-width: 1024px) {
     padding: 20px 30px;
@@ -90,13 +90,13 @@ const FooterLinks = styled.div`
   }
 
   @media (max-width: 768px) {
-    gap: 15px; /* Kurangi jarak antar tautan */
+    gap: 15px;
   }
 
   @media (max-width: 480px) {
-    flex-direction: column; /* Tampilkan tautan secara vertikal */
+    flex-direction: column;
     align-items: center;
-    gap: 10px; /* Lebih kecil untuk mobile */
+    gap: 10px;
   }
 `;
 

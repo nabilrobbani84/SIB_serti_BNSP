@@ -174,7 +174,7 @@ const AboutUs = () => {
             produk yang Anda butuhkan dengan mudah. Bergabunglah bersama kami dan jadikan pengalaman 
             belanja sparepart motor Anda lebih praktis dan terpercaya!
           </Paragraph>
-          <Button href="/contact">Hubungi Kami</Button>
+          <Button href="https://wa.me/628777659082">Hubungi Kami</Button>
         </TextContent>
       </ContentWrapper>
     </SectionContainer>
