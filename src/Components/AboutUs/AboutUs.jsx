@@ -11,11 +11,13 @@ const SectionContainer = styled.section`
   margin: 20px;
 
   @media (max-width: 768px) {
-    padding: 40px 15px;
+    padding: 50px 15px;
+    margin: 15px;
   }
 
   @media (max-width: 480px) {
-    padding: 30px 10px;
+    padding: 40px 10px;
+    margin: 10px;
   }
 `;
 
@@ -43,10 +45,12 @@ const Subtitle = styled.p`
 
   @media (max-width: 768px) {
     font-size: 1.1rem;
+    margin-bottom: 25px;
   }
 
   @media (max-width: 480px) {
     font-size: 1rem;
+    margin-bottom: 20px;
   }
 `;
 
@@ -60,6 +64,7 @@ const ContentWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 25px;
   }
 `;
 
@@ -74,6 +79,11 @@ const Image = styled.img`
   }
 
   @media (max-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
     width: 100%;
   }
 `;
@@ -85,6 +95,21 @@ const TextContent = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     text-align: center;
+  }
+`;
+
+const Paragraph = styled.p`
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
 `;
 
@@ -112,11 +137,21 @@ const Button = styled.a`
     transform: translateY(-5px);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
 `;
 
 const AboutUs = () => {
   return (
-    <SectionContainer>
+    <SectionContainer id="about-us">
       <Title>About <Highlight>Us</Highlight></Title>
       <Subtitle>
         Kami adalah platform terpercaya untuk membeli dan menjual sparepart motor. 
@@ -129,16 +164,16 @@ const AboutUs = () => {
           alt="About Us"
         />
         <TextContent>
-          <p>
+          <Paragraph>
             Dengan pengalaman bertahun-tahun di industri otomotif, <Highlight>kami</Highlight> 
             menghadirkan lebih dari <Highlight>10.000 sparepart motor</Highlight> yang berkualitas, 
             mulai dari <Highlight>sparepart standar</Highlight> hingga <Highlight>aksesoris custom</Highlight>.
-          </p>
-          <p>
+          </Paragraph>
+          <Paragraph>
             Layanan kami mencakup pengiriman cepat ke seluruh Indonesia, sehingga Anda bisa mendapatkan 
             produk yang Anda butuhkan dengan mudah. Bergabunglah bersama kami dan jadikan pengalaman 
             belanja sparepart motor Anda lebih praktis dan terpercaya!
-          </p>
+          </Paragraph>
           <Button href="/contact">Hubungi Kami</Button>
         </TextContent>
       </ContentWrapper>
